@@ -1,0 +1,12 @@
+https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
+
+------------
+
+dployment:
+Data Management:
+Separate: 
+1) Past-year for training
+2) Current-year past for test
+3) Next match for prediction
+
+Idea:
