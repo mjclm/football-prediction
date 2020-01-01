@@ -19,7 +19,7 @@ url_cal = '../data/calendrier_l1.csv'
 calendar = make_calendar(url_cal, teams)
 
 # load or train the model
-if os.path.exists(MODEL) and ((time.time() - os.path.getctime(MODEL)) > 6e5):
+if os.path.exists(MODEL) and ((time.time() - os.path.getctime(MODEL)) < 6e5):
     model = pickle.load(open(MODEL, 'rb'))
 else:
     X, y = transform_data(creation_features(data_preparation(df)))
